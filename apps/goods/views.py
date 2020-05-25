@@ -17,7 +17,7 @@ def static_index(request):
     '''首页静态页面'''
     import os
     from django.conf import settings
-    static_index_path = os.path.join(settings.BASE_DIR, 'static/index.html')
+    static_index_path = os.path.join(settings.STATIC_ROOT, 'index.html')
     with open(static_index_path, 'r') as f:
         static_index_html = f.read()
     return HttpResponse(static_index_html)
@@ -138,13 +138,6 @@ class DetailView(View):
 class ListView(View):
     '''商品列表页'''
 
-    # def get(self, request, type_id, page):
-    #
-    #     print('\n\nlist_page\n\n')
-    #     print(type_id)
-    #     print(page)
-    #     return render(request, 'list.html')
-
     def get(self, request, type_id, page):
         '''显示列表页'''
         # 获取种类信息
@@ -172,7 +165,7 @@ class ListView(View):
             skus = type.goodssku_set.all().order_by('-id')
 
         # 对数据进行分页 (list数据, 每页的个数)
-        paginator = Paginator(skus, 8)
+        paginator = Paginator(skus, 10)
 
         # 获取第page页的内容
         try:

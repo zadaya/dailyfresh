@@ -612,6 +612,7 @@ html, body {
 
 .goods_type_list li {
     width: 196px;
+    height: 235px;
     float: left;
     margin-bottom: 10px
 }

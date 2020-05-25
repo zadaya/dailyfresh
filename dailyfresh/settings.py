@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ven(nzkigrzsiyfsr=5+%(bvm6k0)bqo-wnpe63)qx&2(t$6ee'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -170,7 +170,7 @@ MEDIA_ROOT = '/var/www/media_file/'
 # 设置Django的文件存储类
 DEFAULT_FILE_STORAGE = 'utils.storage.MyStorage'
 
-# 设置默认文件服务器的IP和端口号及目录
+# 设置默认文件服务器的IP和端口号及目录 本项目中文件服务器在web服务器上
 STORAGE_ADDRESS = SITE_ADDRESS + 'media_file/'
 
 # 富文本编辑器配置
