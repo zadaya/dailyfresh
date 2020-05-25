@@ -3,19 +3,33 @@
 
 # 依赖环境 pip list
 celery==4.4.2
+
 Django==3.0.5
+
 django-celery==3.3.1
+
 django-haystack==2.8.1
+
 django-redis==4.11.0
+
 django-tinymce==2.9.0
+
 itsdangerous==1.1.0
+
 mysqlclient==1.4.6
+
 Pillow==7.1.2
+
 python-alipay-sdk==2.0.1
+
 Whoosh==2.7.4
+
 redis==3.5.0
+
 jieba==0.42.1  # Whoosh全文搜索引擎并不支持中文，故需安装jieba 配置教程：https://www.yht7.com/news/60168
-six==1.14.0  # 因django3.0以后弃用six，但haystack(全文搜索)依赖于six，解决方法：https://blog.csdn.net/weixin_44485643/article/details/104243048
+
+six==1.14.0  # 因django3.0以后弃用six，但haystack(全文搜索)依赖于six，解决方法:https://blog.csdn.net/weixin_44485643/article/details/104243048
+
 uWSGI==2.0.18
 
 # 启动项
