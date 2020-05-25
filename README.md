@@ -1,7 +1,7 @@
 # dailyfresh
 基于Django的社区生鲜商品交易平台(每日生鲜项目)
 
-# 依赖环境 pip list
+## 依赖环境 pip list
 celery==4.4.2
 
 Django==3.0.5
@@ -32,7 +32,7 @@ six==1.14.0  # 因django3.0以后弃用six，但haystack(全文搜索)依赖于s
 
 uWSGI==2.0.18
 
-# 启动项
+## 启动项
 mysql 一般自启动
 
 redis 启动命令: redis-server （可选参数：配置文件路径）
@@ -50,7 +50,7 @@ nginx启动与停止命令：./nginx
                   ./nginx -s quit
                   ./nginx -s reload
 
-# 部署项目:
+## 部署项目:
     设置网站的地址：
         settings.py中SITE_ADDRESS = 'http://(此处填写ip:port)/'
 
