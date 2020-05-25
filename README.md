@@ -34,35 +34,44 @@ uWSGI==2.0.18
 
 # 启动项
 mysql 一般自启动
+
 redis 启动命令: redis-server （可选参数：配置文件路径）
+
 celery-worker 启动命令:（在项目目录下）celery -A celery_tasks.tasks_worker worker -l info
+
 django-haystack 生成索引数据命令:（在项目目录下） python manage.py rebuild_index
+
 
 uwsgi启动与停止命令：uwsgi --ini uwsgi.ini
                   uwsgi --stop uwsgi.pid
+
 nginx启动与停止命令：./nginx
                   ./nginx -s stop
                   ./nginx -s quit
                   ./nginx -s reload
 
-部署项目:
+# 部署项目:
     设置网站的地址：
         settings.py中SITE_ADDRESS = 'http://(此处填写ip:port)/'
+
     设置uWSGI的监听Nginx连接的地址：
         uwsgi.ini中socket = 127.0.0.1:8080
+
     设置Nginx的转发地址：
-        # 转发动态请求
+        转发动态请求
         location / {
                 # 包含uwsgi的请求参数
                 include uwsgi_params;
                 # 转交请求给uwsgi
                 uwsgi_pass 127.0.0.1:8080;  (对应uwsgi.ini中socket配置的地址)
         }
-        # 处理静态请求
+
+        处理静态请求
         location /static {
                 # 指定静态文件存放的目录
                 alias /var/www/dailyfresh/static/;
         }
+
     迁移静态文件到nginx制定的静态目录
         如：在Django的 settings.py 中配置 STATIC_ROOT = '/var/www/dailyfresh/static'
         并执行命令 python manage.py collectstatic
