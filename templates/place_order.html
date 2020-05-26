@@ -96,9 +96,11 @@
                 'address_id': address_id,
                 'pay_method': pay_method,
                 'sku_ids': sku_ids,
+                'is_order_now': '{{ is_order_now }}',
+                'order_now_count': '{{ total_count }}',
                 'csrfmiddlewaretoken': '{{ csrf_token }}'
             }
-            // 发起ajax post请求, 访问 /cart/update 传递参数：sku_id, count
+            // 发起ajax post请求
             $.post('{% url 'order:commit' %}', params, function (data) {
                 if (data.res == 1) {
                     // 订单创建成功

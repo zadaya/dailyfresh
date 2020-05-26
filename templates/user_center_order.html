@@ -57,29 +57,31 @@
         {% endfor %}
 
         {# 页码区域 #}
-        <div class="pagenation">
-            {% if orders_page.has_previous %}
-                <a href="{% url 'user:order' orders_page.previous_page_number %}">
-                    <上一页
-                </a>
-            {% else %}
-                <a href="#">
-                    <没有了
-                </a>
-            {% endif %}
-            {% for pindex in pages %}
-                {% if pindex == orders_page.number %}
-                    <a href="#" class="active">{{ pindex }}</a>
+        {% if is_have_order %}
+            <div class="pagenation">
+                {% if orders_page.has_previous %}
+                    <a href="{% url 'user:order' orders_page.previous_page_number %}">
+                        <上一页
+                    </a>
                 {% else %}
-                    <a href="{% url 'user:order' pindex %}">{{ pindex }}</a>
+                    <a href="#">
+                        <没有了
+                    </a>
                 {% endif %}
-            {% endfor %}
-            {% if orders_page.has_next %}
-                <a href="{% url 'user:order' orders_page.next_page_number %}">下一页></a>
-            {% else %}
-                <a href="#">没有了></a>
-            {% endif %}
-        </div>
+                {% for pindex in pages %}
+                    {% if pindex == orders_page.number %}
+                        <a href="#" class="active">{{ pindex }}</a>
+                    {% else %}
+                        <a href="{% url 'user:order' pindex %}">{{ pindex }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if orders_page.has_next %}
+                    <a href="{% url 'user:order' orders_page.next_page_number %}">下一页></a>
+                {% else %}
+                    <a href="#">没有了></a>
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
 {% endblock right_content %}
 {% block bottomfiles %}
@@ -89,16 +91,15 @@
             // 获取status
             status = $(this).attr('status')
             order_id = $(this).attr('order_id')
+            // 组织参数 注意csrf_token认证
+            params = {
+                'order_id': order_id,
+                'csrfmiddlewaretoken': '{{ csrf_token }}'
+            }
             if (status == 1) {
                 // 进行支付
                 // 获取订单ID
                 // 发起ajax post请求，访问/order/pay进行支付， 传递参数order_id
-                // 组织参数 注意csrf_token认证
-                params = {
-                    'order_id': order_id,
-                    'csrfmiddlewaretoken': '{{ csrf_token }}'
-                }
-                // 发起ajax post请求, 访问 /cart/update 传递参数：sku_id, count
                 $.post('{% url 'order:pay' %}', params, function (data) {
                     if (data.res == 1) {
                         // 支付接口请求成功，引导用户到支付页面
@@ -114,6 +115,20 @@
                                 alert(data.errmsg)
                             }
                         })
+                    } else {
+                        //失败返回错误信息
+                        alert(data.errmsg)
+                    }
+                })
+            } else if (status == 3) {
+                // 待收货状态，点击进行收货操作页面
+                // 发起ajax post请求, 访问 /cart/update 传递参数：sku_id, count
+                $.post('{% url 'order:confirmreceive' %}', params, function (data) {
+                    if (data.res == 1) {
+                        // 确认收货操作成功
+                        alert(data.message)
+                        // 刷新页面
+                        location.reload()
                     } else {
                         //失败返回错误信息
                         alert(data.errmsg)

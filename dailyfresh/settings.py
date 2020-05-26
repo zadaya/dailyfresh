@@ -154,8 +154,10 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-# 网站地址
-SITE_ADDRESS = 'http://192.168.1.196/'
+# 网站地址(uwsgi托管时)
+# SITE_ADDRESS = 'http://192.168.1.196/'
+# 网站地址(runserver托管时)
+SITE_ADDRESS = 'http://192.168.1.196:8800/'
 
 # 静态文件地址
 STATIC_URL = '/static/'
@@ -171,7 +173,7 @@ MEDIA_ROOT = '/var/www/media_file/'
 DEFAULT_FILE_STORAGE = 'utils.storage.MyStorage'
 
 # 设置默认文件服务器的IP和端口号及目录 本项目中文件服务器在web服务器上
-STORAGE_ADDRESS = SITE_ADDRESS + 'media_file/'
+STORAGE_ADDRESS = 'http://192.168.1.196/media_file/'
 
 # 富文本编辑器配置
 TINYMCE_DEFAULT_CONFIG = {

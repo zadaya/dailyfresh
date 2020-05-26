@@ -50,7 +50,7 @@
             </div>
             <div class="total">总价：<em>16.80元</em></div>
             <div class="operate_btn">
-                <a href="javascript:;" class="buy_btn">立即购买</a>
+                <a href="javascript:;" sku_id="{{ sku.id }}" class="buy_btn" id="buy_btn">立即购买</a>
                 <a href="javascript:;" sku_id="{{ sku.id }}" class="add_cart" id="add_cart">加入购物车</a>
             </div>
         </div>
@@ -169,7 +169,7 @@
             update_goods_amount()
         })
 
-
+        // 添加商品到购物车
         $('#add_cart').click(function () {
             // 获取商品的id和数量
             sku_id = $(this).attr('sku_id')
@@ -200,6 +200,25 @@
                 } else {
                     // 添加失败
                     alert(data.errmsg)
+                }
+            })
+        })
+
+        // 通过立即购买下单
+        $('#buy_btn').click(function () {
+            // 获取商品的id和数量
+            sku_id = $(this).attr('sku_id')
+            count = $('.num_show').val()
+            // 组织参数 注意csrf_token认证
+            params = {'sku_id': sku_id, 'count': count, 'csrfmiddlewaretoken': '{{ csrf_token }}'}
+            // 发起ajax post请求, 访问 /order/now 传递参数：sku_id, count
+            $.post('{% url 'order:now' %}', params, function (data) {
+                if (data.res) {
+                    // 若返回错误信息则停止下单并显示提示信息
+                    alert(data.errmsg)
+                } else {
+                    // 订单下单成功则跳转至订单提交页
+                    $(document.body).html(data);
                 }
             })
         })

@@ -28,7 +28,7 @@
                             <label>记住用户名</label>
                             <a href="#">忘记密码</a>
                             <br/>
-                            <p style="color: red; margin-top: 8px">{{ errmsg }}</p>
+                            <p style="color: red; margin-top: 8px">{{ errmsg }}{{ go_active | safe }}</p>
                         </div>
                         <input type="submit" name="" value="登录" class="input_submit">
                     </form>
@@ -37,4 +37,22 @@
         </div>
     </div>
 {% endblock body %}
-{% block bottomfiles %}{% endblock bottomfiles %}
+{% block bottomfiles %}
+    <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script type="text/javascript">
+        $('.re_active').click(function () {
+            // 发起ajax POST 请求， 访问/user/re_active
+            // 组织参数 注意csrf_token认证
+
+            userid = $(this).attr('userid')
+            params = {
+                'userid': $(this).attr('userid'),
+                'csrfmiddlewaretoken': '{{ csrf_token }}'
+            }
+            // 发起ajax post请求, 访问 /cart/update 传递参数：sku_id, count
+            $.post('{% url 'user:re_active' %}', params, function (data) {
+                alert(data.message)
+            })
+        })
+    </script>
+{% endblock bottomfiles %}

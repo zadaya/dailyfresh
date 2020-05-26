@@ -68,7 +68,70 @@ class OrderPlaceView(LoginRequiredMixin, View):
                    'transit_price': transit_price,
                    'total_pay': total_pay,
                    'address_list': address_list,
-                   'sku_ids': sku_ids}
+                   'sku_ids': sku_ids,
+                   'is_order_now': False}
+        # 返回应答
+        return render(request, 'place_order.html', context)
+
+
+# /order/now
+class OrderNowView(LoginRequiredMixin, View):
+    '''直接下订单'''
+
+    def post(self, request):
+        '''对立即购买方式创建订单请求的处理'''
+
+        user = request.user
+        if not user.is_authenticated:
+            return JsonResponse({'res': -1, 'errmsg': '请登录后操作'})
+        # 接收数据
+        sku_id = request.POST.get('sku_id')
+        count = request.POST.get('count')
+        # 数据校验
+        # 校验数据是否完整
+        if not all([sku_id, count]):
+            return JsonResponse({'res': -2, 'errmsg': '数据不完整'})
+        # 校验添加的商品数量
+        try:
+            count = int(count)
+        except Exception as e:
+            # 数目出错
+            return JsonResponse({'res': -3, 'errmsg': '商品数目出错'})
+        # 校验商品是否存在
+        try:
+            sku = GoodsSKU.objects.get(id=sku_id)
+        except GoodsSKU.DoesNotExist:
+            return JsonResponse({'res': -4, 'errmsg': '商品不存在'})
+
+        # # 业务处理
+        # # 获取redis链接,添加购物车记录
+        # conn = get_redis_connection('default')
+        # cart_key = 'cart_%d' % user.id
+        # if count > sku.stock:
+        #     return JsonResponse({'res': -5, 'errmsg': '库存不足'})
+        # # 商品信息以覆盖的方式保存进购物车
+        # conn.hset(cart_key, sku_id, count)
+
+        # 计算本商品的小计费用
+        amount = sku.price * int(count)
+        # 运费:实际开发中属于一个子系统
+        transit_price = 10  # 本系统中直接定位10元
+        # 实付款
+        total_pay = amount + transit_price
+        # 获取用户收获地址
+        address_list = user.address_set.all()
+        # 组织上下文
+        sku.count = count
+        sku.amount = amount
+        skus = [sku]
+        context = {'skus': skus,
+                   'total_count': count,
+                   'total_price': amount,
+                   'transit_price': transit_price,
+                   'total_pay': total_pay,
+                   'address_list': address_list,
+                   'sku_ids': sku_id,
+                   'is_order_now': True}
         # 返回应答
         return render(request, 'place_order.html', context)
 
@@ -85,9 +148,10 @@ class OrderCommitView(LoginRequiredMixin, View):
         address_id = request.POST.get('address_id')
         pay_method = request.POST.get('pay_method')
         sku_ids = request.POST.get('sku_ids')
-
+        is_order_now = request.POST.get('is_order_now')
+        print(str(is_order_now))
         # 校验参数完整性
-        if not all([address_id, pay_method, sku_ids]):
+        if not all([address_id, pay_method, sku_ids, is_order_now]):
             return JsonResponse({'res': -1, 'errmsg': '参数不完整'})
         # 校验支付方式
         if pay_method not in OrderInfo.PAY_METHODS.keys():
@@ -133,7 +197,10 @@ class OrderCommitView(LoginRequiredMixin, View):
                         transaction.savepoint_rollback(save_id)
                         return JsonResponse({'res': -4, 'errmsg': '商品不存在'})
                     # 获取商品要购买的数量
-                    count = conn.hget(cart_key, sku_id)
+                    if not is_order_now:
+                        count = conn.hget(cart_key, sku_id)
+                    else:
+                        count = request.POST.get('order_now_count')
 
                     # todo:判断商品的库存
                     if int(count) > sku.stock:
@@ -180,7 +247,8 @@ class OrderCommitView(LoginRequiredMixin, View):
         # 提交事务
         transaction.savepoint_commit(save_id)
         # todo: 将对应的商品信息从购物车中删除
-        conn.hdel(cart_key, *sku_ids)  # *sku_ids相当与[sku_id1,sku_id2,......,sku_idn]
+        if not is_order_now:
+            conn.hdel(cart_key, *sku_ids)  # *sku_ids相当与[sku_id1,sku_id2,......,sku_idn]
 
         # 返回应答
         return JsonResponse({'res': 1, 'message': '创建成功'})
@@ -264,7 +332,7 @@ class OrderCheckPay(View):
                                           order_status=1)
         except OrderInfo.DoesNotExist:
             return JsonResponse({'res': -3, 'errmsg': '订单错误'})
-        total_pay = order.total_price + order.transit_price  # 计算得到订单应付总金额
+        # total_pay = order.total_price + order.transit_price  # 计算得到订单应付总金额
 
         # 业务处理:使用Python SDK调用支付宝的交易查询接口
         # 初始化
@@ -289,7 +357,7 @@ class OrderCheckPay(View):
                 trade_no = response.get('trade_no')
                 # 更新订单状态
                 order.trade_no = trade_no
-                order.order_status = 4
+                order.order_status = 3
                 order.save()
                 # 返回结果
                 return JsonResponse({'res': 1, 'message': '支付成功'})
@@ -303,6 +371,32 @@ class OrderCheckPay(View):
                 print(code)
                 print(response.get('trade_status'))
                 return JsonResponse({'res': -4, 'errmsg': '支付错误'})
+
+
+# ajax post
+# /order/confirmreceive
+class OrderConfirmReceive(View):
+    '''确认收货'''
+
+    def post(self, request):
+        '''处理确认收货的请求'''
+        # 用户是否登录
+        user = request.user
+        if not user.is_authenticated:
+            return JsonResponse({'res': -1, 'errmsg': '用户未登录'})
+
+        # 接收参数
+        order_id = request.POST.get('order_id')
+        # 校验参数
+        if not order_id:
+            return JsonResponse({'res': -2, 'errmsg': '无效的订单ID'})
+
+        # 业务处理：将订单进行收货处理，并更新订单状态
+        order = OrderInfo.objects.get(order_id=order_id)
+        order.order_status = 4
+        order.save()
+        # 返回结果
+        return JsonResponse({'res': 1, 'message': '确认收货成功'})
 
 
 # /order/checkpay

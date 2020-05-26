@@ -2,7 +2,7 @@ import re
 
 from django.core.mail import send_mail
 from django.core.paginator import Paginator
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.contrib.auth import authenticate, login, logout
@@ -38,7 +38,16 @@ class RegisterView(View):
         if not all([username, password, email]):
             # 若数据不完整
             return render(request, 'register.html', {'errmsg': '数据不完整'})
-        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+        if len(username) < 5 or len(username) > 20:
+            # 若用户名长度不足5或超过20
+            return render(request, 'register.html', {'errmsg': '请输入5-20个字符的用户名'})
+        if len(password) < 6 or len(password) > 20:
+            # 若密码长度不足6或超过20
+            return render(request, 'register.html', {'errmsg': '密码最少6位，最长20位'})
+        if password != request.POST.get('cpwd'):
+            # 若两次输入的密码不一致
+            return render(request, 'register.html', {'errmsg': '两次输入的密码不一致'})
+        if not re.match(r'^[a-zA-Z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
             # 若邮箱地址不合法
             return render(request, 'register.html', {'errmsg': '邮箱地址不合法'})
         if allow != 'on':
@@ -48,12 +57,11 @@ class RegisterView(View):
             user = User.objects.get(username__exact=username)
         except User.DoesNotExist:
             user = None
-        # if user:
-        #     return render(request, 'register.html', {'errmsg': '用户名已存在'})
+        if user:
+            return render(request, 'register.html', {'errmsg': '用户名已存在'})
 
         # 3.进行业务处理:  进行用户注册
-        # user = User.objects.create_user(username, email, password)
-        user = User.objects.get(username__exact=username)
+        user = User.objects.create_user(username, email, password)
         user.is_active = 0  # 设置激活状态为未激活
         user.save()
 
@@ -63,12 +71,11 @@ class RegisterView(View):
         info = {'confirm': user.id}
         token = serializer.dumps(info)  # 返回的为字节码但解密过程接受参数为字符串
         token = token.decode('utf8')  # 将字节码转为字符串
-        print('username:' + username + '\nemail:' + email)
-
+        print('去激活: username:' + username + '\nemail:' + email)
         # 发邮件 使用经过Celery.task()装饰后的delay()启用异步处理，避免等待
         send_register_active_email.delay(email, username, token)
 
-        # 4.返回应答
+        # 5.返回应答
         return redirect(reverse('user:login'))
 
 
@@ -93,6 +100,25 @@ class ActiveView(View):
         except SignatureExpired as e:
             # 激活链接已过期
             return HttpResponse('激活链接已过期')
+
+
+# /user/re_active
+class ReActiveView(View):
+    def post(self, request):
+        userid = request.POST.get('userid')
+        print(userid)
+        user = User.objects.get(id=userid)
+        serializer = Serializer(settings.SECRET_KEY, 3600)
+        info = {'confirm': user.id}
+        token = serializer.dumps(info)  # 返回的为字节码但解密过程接受参数为字符串
+        token = token.decode('utf8')  # 将字节码转为字符串
+        print('重新激活: username:' + user.username + '\nemail:' + user.email)
+
+        # 发邮件 使用经过Celery.task()装饰后的delay()启用异步处理，避免等待
+        send_register_active_email.delay(user.email, user.username, token)
+
+        message = '尊敬的' + user.username + '，您的激活链接已发送，请及时查看并激活'
+        return JsonResponse({'res': 1, 'message': message})
 
 
 # /user/login
@@ -145,7 +171,8 @@ class LoginView(View):
             else:
                 # 用户未激活
                 print('error：账户未激活')
-                return render(request, 'login.html', {'errmsg': '账户未激活'})
+                go_active = '<a href="javascript:;" class="re_active" userid="' + str(user.id) + '">重新发送该用户的激活邮件</a>'
+                return render(request, 'login.html', {'errmsg': '账户未激活', 'go_active': go_active})
 
         else:
             return render(request, 'login.html', {'errmsg': '用户名或密码错误'})
@@ -213,6 +240,10 @@ class UserOrderView(LoginRequiredMixin, View):
             order.order_status_name = OrderInfo.ORDER_STATUS[order.order_status]
             order.total_cost = order.total_price + order.transit_price
             print(order.total_cost)
+        is_have_order = True
+        if len(orders_page.object_list) == 0:
+            is_have_order = False
+
         # todo: 进行页码的控制，页面上最多显示5个页码
         # a.如果总页数小于5页，则显示所有页码
         # b.如果当前页是总页数前3页，则显示1-5页
@@ -229,7 +260,8 @@ class UserOrderView(LoginRequiredMixin, View):
             pages = range(page - 2, page + 3)
         context = {'page': 'order',
                    'orders_page': orders_page,
-                   'pages': pages}
+                   'pages': pages,
+                   'is_have_order': is_have_order}
         return render(request, 'user_center_order.html', context)
 
 
@@ -279,19 +311,18 @@ class UserAddressView(LoginRequiredMixin, View):
         # 返回应答，刷新页面信息
         return redirect(reverse('user:address'))  # 重定向使用get该地址即可
 
-
 # session 测试
-class SessionTestView:
-    # /set_session
-    def set_session(request):
-        request.session['username'] = 'zdy'
-        request.session['password'] = '123456'
-
-        return HttpResponse('session 设置成功～！')
-
-    # /get_session
-    def get_session(request):
-        username = request.session['username']
-        password = request.session['password']
-
-        return HttpResponse('username = %s<br />password = %s' % (username, password))
+# class SessionTestView:
+#     # /set_session
+#     def set_session(request):
+#         request.session['username'] = 'zdy'
+#         request.session['password'] = '123456'
+#
+#         return HttpResponse('session 设置成功～！')
+#
+#     # /get_session
+#     def get_session(request):
+#         username = request.session['username']
+#         password = request.session['password']
+#
+#         return HttpResponse('username = %s<br />password = %s' % (username, password))
