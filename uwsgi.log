@@ -1,0 +1,987 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:03:11 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x55a3e0f2c4f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a3e0f2c4f0 pid: 4114 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4114)
+spawned uWSGI worker 1 (pid: 4131, cores: 2)
+spawned uWSGI worker 2 (pid: 4132, cores: 2)
+spawned uWSGI worker 3 (pid: 4133, cores: 2)
+spawned uWSGI worker 4 (pid: 4135, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:38:35 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x55971f62f1e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55971f62f1e0 pid: 2727 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2727)
+spawned uWSGI worker 1 (pid: 2745, cores: 2)
+spawned uWSGI worker 2 (pid: 2746, cores: 2)
+spawned uWSGI worker 3 (pid: 2748, cores: 2)
+spawned uWSGI worker 4 (pid: 2750, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:48:21 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x55e6546e01e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e6546e01e0 pid: 3054 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3054)
+spawned uWSGI worker 1 (pid: 3071, cores: 2)
+spawned uWSGI worker 2 (pid: 3072, cores: 2)
+spawned uWSGI worker 3 (pid: 3073, cores: 2)
+spawned uWSGI worker 4 (pid: 3076, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:51:05 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x55e9bb6c2570
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e9bb6c2570 pid: 3246 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3246)
+spawned uWSGI worker 1 (pid: 3263, cores: 2)
+spawned uWSGI worker 2 (pid: 3264, cores: 2)
+spawned uWSGI worker 3 (pid: 3265, cores: 2)
+spawned uWSGI worker 4 (pid: 3268, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:51:51 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x55b9b969a1e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b9b969a1e0 pid: 3339 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3339)
+spawned uWSGI worker 1 (pid: 3356, cores: 2)
+spawned uWSGI worker 2 (pid: 3357, cores: 2)
+spawned uWSGI worker 3 (pid: 3359, cores: 2)
+spawned uWSGI worker 4 (pid: 3361, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:57:08 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x5630d601a470
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5630d601a470 pid: 3622 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3622)
+spawned uWSGI worker 1 (pid: 3645, cores: 2)
+spawned uWSGI worker 2 (pid: 3646, cores: 2)
+spawned uWSGI worker 3 (pid: 3648, cores: 2)
+spawned uWSGI worker 4 (pid: 3649, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu May 28 06:58:01 2020] ***
+compiled with version: 9.3.0 on 25 May 2020 01:23:49
+os: Linux-5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+nodename: zdy-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zdy/bysj/dailyfresh
+writing pidfile to /home/zdy/bysj/dailyfresh/uwsgi.pid
+detected binary path: /home/zdy/.virtualenvs/dailyfreshvenv/bin/uwsgi
+chdir() to /home/zdy/bysj/dailyfresh
+your processes number limit is 11748
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zdy/.virtualenvs/dailyfreshvenv
+Set PythonHome to /home/zdy/.virtualenvs/dailyfreshvenv
+Python main interpreter initialized at 0x55f41c60b1e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f41c60b1e0 pid: 2438 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2438)
+spawned uWSGI worker 1 (pid: 2461, cores: 2)
+spawned uWSGI worker 2 (pid: 2462, cores: 2)
+spawned uWSGI worker 3 (pid: 2464, cores: 2)
+spawned uWSGI worker 4 (pid: 2466, cores: 2)
+
+
+ This is User
+设置缓存
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 1/1] 192.168.1.134 () {44 vars in 851 bytes} [Thu May 28 06:58:10 2020] GET /index => generated 17942 bytes in 464 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 2/2] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:11 2020] GET /index => generated 17942 bytes in 70 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+
+
+ This is User
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2461|app: 0|req: 1/3] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:15 2020] GET /index => generated 17942 bytes in 361 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/lizhi.jpg
+http://192.168.1.196/media_file/images/goods/xuecheng.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[pid: 2466|app: 0|req: 3/4] 192.168.1.134 () {44 vars in 862 bytes} [Thu May 28 06:58:16 2020] GET /detail/2 => generated 15134 bytes in 81 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 4/5] 192.168.1.134 () {44 vars in 859 bytes} [Thu May 28 06:58:16 2020] GET /index => generated 17942 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/lizhi.jpg
+http://192.168.1.196/media_file/images/goods/xuecheng.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[pid: 2466|app: 0|req: 5/6] 192.168.1.134 () {44 vars in 862 bytes} [Thu May 28 06:58:18 2020] GET /detail/2 => generated 15134 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 6/7] 192.168.1.134 () {44 vars in 859 bytes} [Thu May 28 06:58:19 2020] GET /index => generated 17942 bytes in 71 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/lizhi.jpg
+http://192.168.1.196/media_file/images/goods/xuecheng.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[pid: 2466|app: 0|req: 7/8] 192.168.1.134 () {44 vars in 862 bytes} [Thu May 28 06:58:21 2020] GET /detail/2 => generated 15134 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 8/9] 192.168.1.134 () {44 vars in 859 bytes} [Thu May 28 06:58:22 2020] GET /index => generated 17942 bytes in 68 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+
+
+ This is User
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2462|app: 0|req: 1/10] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:25 2020] GET /index => generated 17942 bytes in 366 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+
+
+ This is User
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2464|app: 0|req: 1/11] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:29 2020] GET /index => generated 17942 bytes in 360 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 9/12] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:32 2020] GET /index => generated 17942 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2464|app: 0|req: 2/13] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:33 2020] GET /index => generated 17942 bytes in 75 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 10/14] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:35 2020] GET /index => generated 17942 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2466|app: 0|req: 11/15] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:35 2020] GET /index => generated 17942 bytes in 67 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2462|app: 0|req: 2/16] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:36 2020] GET /index => generated 17942 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2464|app: 0|req: 3/17] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:37 2020] GET /index => generated 17942 bytes in 71 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2462|app: 0|req: 3/18] 192.168.1.134 () {46 vars in 887 bytes} [Thu May 28 06:58:41 2020] GET /index => generated 17942 bytes in 78 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2464|app: 0|req: 4/19] 192.168.1.134 () {46 vars in 887 bytes} [Thu May 28 06:58:43 2020] GET /index => generated 17942 bytes in 86 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2464|app: 0|req: 5/20] 192.168.1.134 () {46 vars in 887 bytes} [Thu May 28 06:58:43 2020] GET /index => generated 17942 bytes in 68 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2464|app: 0|req: 6/21] 192.168.1.134 () {46 vars in 887 bytes} [Thu May 28 06:58:43 2020] GET /index => generated 17942 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+http://192.168.1.196/media_file/images/banner/slide03.jpg
+http://192.168.1.196/media_file/images/banner/slide02.jpg
+http://192.168.1.196/media_file/images/banner/slide.jpg
+http://192.168.1.196/media_file/images/banner/adv02.jpg
+http://192.168.1.196/media_file/images/banner/adv01.jpg
+http://192.168.1.196/media_file/images/type/banner01.jpg
+http://192.168.1.196/media_file/images/goods/goods009.jpg
+http://192.168.1.196/media_file/images/goods/yingtao.jpg
+http://192.168.1.196/media_file/images/goods/goods101.jpg
+http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+http://192.168.1.196/media_file/images/type/banner02.jpg
+http://192.168.1.196/media_file/images/goods/longxia.jpg
+http://192.168.1.196/media_file/images/goods/goods020.jpg
+http://192.168.1.196/media_file/images/goods/baoyu.jpg
+http://192.168.1.196/media_file/images/goods/youyu.jpg
+http://192.168.1.196/media_file/images/type/banner03.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/type/banner04.jpg
+http://192.168.1.196/media_file/images/goods/jidan.jpg
+http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+http://192.168.1.196/media_file/images/type/banner05.jpg
+http://192.168.1.196/media_file/images/goods/qincai.jpg
+http://192.168.1.196/media_file/images/goods/wwc.jpg
+http://192.168.1.196/media_file/images/goods/sghg.jpg
+http://192.168.1.196/media_file/images/goods/gongcai.jpg
+http://192.168.1.196/media_file/images/type/banner06.jpg
+http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[pid: 2461|app: 0|req: 2/22] 192.168.1.134 () {44 vars in 856 bytes} [Thu May 28 06:58:44 2020] GET /index => generated 17942 bytes in 73 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+http://192.168.1.196/media_file/images/goods/btj.jpg
+http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+http://192.168.1.196/media_file/images/goods/niupai.jpg
+[pid: 2466|app: 0|req: 12/23] 192.168.1.134 () {44 vars in 857 bytes} [Thu May 28 06:59:07 2020] GET /detail/1 => generated 14769 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 2466|app: 0|req: 13/24] 192.168.1.134 () {50 vars in 932 bytes} [Thu May 28 06:59:10 2020] POST /cart/add/ => generated 61 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 141 bytes (1 switches on core 0)
+[pid: 2466|app: 0|req: 14/25] 192.168.1.134 () {44 vars in 871 bytes} [Thu May 28 06:59:13 2020] GET /user/login/ => generated 3467 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.

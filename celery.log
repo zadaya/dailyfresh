@@ -1,0 +1,61 @@
+[2020-05-28 05:23:49,584: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 05:23:49,592: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 05:23:50,609: INFO/MainProcess] mingle: all alone
+[2020-05-28 05:23:50,621: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 05:23:50,622: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 05:31:05,304: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 05:31:05,314: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 05:31:06,332: INFO/MainProcess] mingle: all alone
+[2020-05-28 05:31:06,350: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 05:31:06,350: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 06:57:09,302: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 06:57:09,310: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 06:57:10,329: INFO/MainProcess] mingle: all alone
+[2020-05-28 06:57:10,340: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 06:57:10,340: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 06:57:16,642: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 599, in start
+    c.loop(*c.loop_args())
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/worker/loops.py", line 83, in asynloop
+    next(loop)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 1088, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 359, in on_readable
+    chan.handlers[type]()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 693, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 703, in _receive_one
+    response = c.parse_response()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/client.py", line 3502, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/client.py", line 3476, in _execute
+    return command(*args, **kwargs)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 730, in read_response
+    response = self._parser.read_response()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 321, in read_response
+    raw = self._buffer.readline()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2020-05-28 06:58:03,234: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 06:58:03,242: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 06:58:04,261: INFO/MainProcess] mingle: all alone
+[2020-05-28 06:58:04,271: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 06:58:04,272: INFO/MainProcess] celery@zdy-VirtualBox ready.
