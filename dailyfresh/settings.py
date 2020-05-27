@@ -155,9 +155,9 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 # 网站地址(uwsgi托管时)
-# SITE_ADDRESS = 'http://192.168.1.196/'
+SITE_ADDRESS = 'http://192.168.1.196/'
 # 网站地址(runserver托管时)
-SITE_ADDRESS = 'http://192.168.1.196:8800/'
+# SITE_ADDRESS = 'http://192.168.1.196:8800/'
 
 # 静态文件地址
 STATIC_URL = '/static/'
