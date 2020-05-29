@@ -1,6 +1,114 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}每日生鲜-登陆{% endblock title %}
+{# 网页顶部链接引入文件块 此处用作添加为重置密码的style #}
+{% block topfiles %}
+    <style>
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=88);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 40%;
+            height: 50%;
+            padding: 20px;
+            border: 10px solid orange;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 15px;
+        }
+
+        .reset_pwd_body_form {
+            background-color: rgb(255, 241, 160);
+            margin: 0 auto;
+            padding: 0;
+            width: 220px;
+        }
+
+        #reset_pwd_form {
+            display: block;
+            margin: auto;
+            padding-bottom: 10px;
+            background-color: rgb(196, 218, 196);
+            width: min-content;
+            font-size: 18px;
+        }
+
+        .reset_pwd_form_input {
+            height: 220px;
+            width: 220px;
+            text-align: center;
+        }
+
+        .reset_pwd_h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 800;
+            color: #555;
+            text-align: center;
+        }
+
+        .reset_pwd_p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #555;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .reset_pwd_input {
+            height: 30px;
+            width: 200px;
+            font-size: 16px;
+            color: #555;
+            font-weight: 300;
+            border-radius: 5px;
+        }
+
+        #submitBtn,
+        #resetBtn {
+            font-size: 14px;
+            border-radius: 5px;
+            height: 30px;
+            width: 80px;
+        }
+
+        #tipMsg * {
+            font-size: 12px;
+        }
+
+        #submitBtn {
+            float: left;
+            margin-left: 10px;
+        }
+
+        #resetBtn {
+            float: right;
+            margin-right: 10px;
+        }
+    </style>
+{% endblock topfiles %}
 {% block header_con %}{% endblock header_con %}
 {% block search_bar %}{% endblock search_bar %}
 {% block body %}
@@ -19,14 +127,16 @@
                 <div class="form_input">
                     <form method="post">
                         {% csrf_token %}
-                        <input type="text" name="username" class="name_input" placeholder="请输入用户名">
+                        <input type="text" name="username" class="name_input" placeholder="请输入用户名"
+                               value="{{ username }}">
                         <div class="user_error">输入错误</div>
                         <input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
                         <div class="pwd_error">输入错误</div>
                         <div class="more_input clearfix">
-                            <input type="checkbox" name="">
+                            <input type="checkbox" name="remember" {{ checked }}>
                             <label>记住用户名</label>
-                            <a href="#">忘记密码</a>
+                            {#<a href="{% url 'user:reset_pwd' %}?user={{ user_id }}">忘记密码</a>#}
+                            <a href="javascript:openDialog();">忘记密码</a>
                             <br/>
                             <p style="color: red; margin-top: 8px">{{ errmsg }}{{ go_active | safe }}</p>
                         </div>
@@ -36,23 +146,121 @@
             </div>
         </div>
     </div>
+    <div id="light" class="white_content">
+        <div class="reset_pwd_body_form">
+            <h3 class="reset_pwd_h3">重置您的密码</h3>
+            <form id="reset_pwd_form" action="javascript:reset_pwd();">
+
+                <div class="reset_pwd_form_input">
+                    <p class="reset_pwd_p">用户名:</p>
+                    <input type="text" class="reset_pwd_input" name="reset_pwd_username" onBlur="check_username()">
+                    <p class="reset_pwd_p">新密码:</p>
+                    <input type="password" class="reset_pwd_input" name="reset_pwd_password" onBlur="check_pwd()"
+                           onfocus="cleanTipMsg()">
+                    <p class="reset_pwd_p">确认密码:</p>
+                    <input type="password" class="reset_pwd_input" name="reset_pwd_confirmpwd" onBlur="check_pwd()"
+                           onfocus="cleanTipMsg()">
+                    <p class="reset_pwd_p" id="tipMsg">&nbsp;</p>
+                    <div class="btnGroup">
+                        <input type="submit" class="reset_pwd_input" value="提交" id="submitBtn" disabled=true>
+                        <input type="button" class="reset_pwd_input" value="取消" id="resetBtn" onclick="closeDialog()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="fade" class="black_overlay"></div>
 {% endblock body %}
 {% block bottomfiles %}
     <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/layer.js' %}"></script>
     <script type="text/javascript">
         $('.re_active').click(function () {
             // 发起ajax POST 请求， 访问/user/re_active
             // 组织参数 注意csrf_token认证
-
-            userid = $(this).attr('userid')
+            userid = $(this).attr('userid');
             params = {
                 'userid': $(this).attr('userid'),
                 'csrfmiddlewaretoken': '{{ csrf_token }}'
-            }
-            // 发起ajax post请求, 访问 /cart/update 传递参数：sku_id, count
+            };
+            // 发起ajax post请求, 访问 /user/re_active 传递参数：userid
             $.post('{% url 'user:re_active' %}', params, function (data) {
-                alert(data.message)
-            })
-        })
+                alert(data.message);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        function check_username() {
+            // 检查用户名
+            var username = $('input[name=reset_pwd_username]').val();
+            if (username == '') {
+                document.getElementById('tipMsg').innerHTML = "<font color='red'>请先输入用户名</font>";
+                document.getElementById('submitBtn').disabled = true;
+                return;
+            }
+        }
+
+        function check_pwd() {
+            // 检查密码长度
+            var pwd = $('input[name=reset_pwd_password]').val();
+            var len = pwd.length;
+            if (len < 6 || len > 20) {
+                document.getElementById('tipMsg').innerHTML = "<font color='red'>密码最少6位，最长20位</font>";
+            } else {
+                validate();
+            }
+        }
+
+        function validate() {
+            // 对比两次输入的密码
+            var pwd = $('input[name=reset_pwd_password]').val();
+            var confirmpwd = $('input[name=reset_pwd_confirmpwd]').val();
+            if (confirmpwd != '') {
+                if (pwd == confirmpwd) {
+                    document.getElementById('tipMsg').innerHTML = "<font color='green'>两次密码相同</font>";
+                    document.getElementById('submitBtn').disabled = false;
+                    check_username();
+                } else {
+                    document.getElementById('tipMsg').innerHTML = "<font color='red' font-size='8px'>两次密码不相同</font>";
+                    document.getElementById('submitBtn').disabled = true;
+                }
+            }
+        }
+
+        // 修改时自动清除提示信息
+        function cleanTipMsg() {
+            document.getElementById('tipMsg').innerHTML = "&nbsp;";
+        }
+
+        function reset_pwd() {
+            var username = $('input[name=reset_pwd_username]').val();
+            var pwd = $('input[name=reset_pwd_password]').val();
+            params = {
+                'username': username,
+                'password': pwd,
+                'csrfmiddlewaretoken': '{{ csrf_token }}'
+            };
+            // 发起ajax post请求, 访问 /user/reset_pwd 传递参数：username
+            $.post('{% url 'user:reset_pwd' %}', params, function (data) {
+                if (data.res == 1) {
+                    var tipmsg = "已向您的邮箱  " + data.message + "  中发送重置密码链接，点击重置后请使用新密码登录";
+                    alert(tipmsg);
+                    closeDialog();
+                } else {
+                    alert(data.errmsg);
+                }
+            });
+        }
+
+        function openDialog() {
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block'
+        }
+
+        function closeDialog() {
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none'
+        }
     </script>
 {% endblock bottomfiles %}

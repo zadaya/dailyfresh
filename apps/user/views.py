@@ -1,6 +1,6 @@
 import re
+import time
 
-from django.core.mail import send_mail
 from django.core.paginator import Paginator
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
@@ -10,7 +10,7 @@ from django.views.generic import View
 from django_redis import get_redis_connection
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, SignatureExpired
 
-from celery_tasks.tasks import send_register_active_email
+from celery_tasks.tasks import send_register_active_email, send_reset_pwd_email
 from dailyfresh import settings
 from apps.user.models import User, Address
 from apps.goods.models import GoodsSKU
@@ -71,9 +71,10 @@ class RegisterView(View):
         info = {'confirm': user.id}
         token = serializer.dumps(info)  # 返回的为字节码但解密过程接受参数为字符串
         token = token.decode('utf8')  # 将字节码转为字符串
-        print('去激活: username:' + username + '\nemail:' + email)
+        print('发送激活邮件: username:' + username + '\nemail:' + email)
         # 发邮件 使用经过Celery.task()装饰后的delay()启用异步处理，避免等待
         send_register_active_email.delay(email, username, token)
+        time.sleep(1)
 
         # 5.返回应答
         return redirect(reverse('user:login'))
@@ -104,6 +105,8 @@ class ActiveView(View):
 
 # /user/re_active
 class ReActiveView(View):
+    '''申请重新激活'''
+
     def post(self, request):
         userid = request.POST.get('userid')
         print(userid)
@@ -112,7 +115,7 @@ class ReActiveView(View):
         info = {'confirm': user.id}
         token = serializer.dumps(info)  # 返回的为字节码但解密过程接受参数为字符串
         token = token.decode('utf8')  # 将字节码转为字符串
-        print('重新激活: username:' + user.username + '\nemail:' + user.email)
+        print('重新发送激活邮件: username:' + user.username + '\nemail:' + user.email)
 
         # 发邮件 使用经过Celery.task()装饰后的delay()启用异步处理，避免等待
         send_register_active_email.delay(user.email, user.username, token)
@@ -128,6 +131,7 @@ class LoginView(View):
     def get(self, request):
         '''显示登陆页面'''
         # 判断是否记住了用户名
+
         if 'username' in request.COOKIES:
             username = request.COOKIES.get('username')
             checked = 'checked'
@@ -310,6 +314,55 @@ class UserAddressView(LoginRequiredMixin, View):
                                is_default=is_default)
         # 返回应答，刷新页面信息
         return redirect(reverse('user:address'))  # 重定向使用get该地址即可
+
+
+# /user/reset_pwd
+class UserResetPwdView(View):
+    '''用户重置密码'''
+
+    def post(self, request):
+        '''发送用户的重置密码邮件'''
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        if not all([username, password]):
+            return JsonResponse({'res': -1, 'errmsg': '数据不完整'})
+        try:
+            user = User.objects.get(username__exact=username)
+        except User.DoesNotExist:
+            return JsonResponse({'res': -2, 'errmsg': '用户不存在，请重新输入'})
+
+        # 发送重置密码邮件，包含激活链接:http://127.0.0.1:8000/user/reset_pwd/+用户id加密信息
+        # 激活链接中需要包含用户的身份信息，并且要进行加密
+        serializer = Serializer(settings.SECRET_KEY, 1800)
+        info = {'confirm': user.id, 'password': password}
+        token = serializer.dumps(info)  # 返回的为字节码但解密过程接受参数为字符串
+        token = token.decode('utf8')  # 将字节码转为字符串
+
+        print('发送重置密码邮件: username:' + user.username + '\nemail:' + user.email)
+        send_reset_pwd_email(user.email, user.username, token)
+        time.sleep(1)
+        return JsonResponse({'res': 1, 'message': user.email})
+
+    def get(self, request):
+        '''进行用户密码重置'''
+        # 进行解密,获取用户ID
+        token = request.GET.get('token')
+        print(token)
+        serializer = Serializer(settings.SECRET_KEY, 1800)
+        try:
+            info = serializer.loads(token)
+            user_id = info['confirm']
+            new_password = info['password']
+            user = User.objects.get(id=user_id)
+            user.set_password(new_password)
+            user.save()
+        except SignatureExpired as e:
+            # 重置密码链接已过期
+            return HttpResponse('重置密码链接已过期')
+        except User.DoesNotExist:
+            return HttpResponse('用户信息错误，密码重置失败')
+        # 跳转到登陆页面
+        return redirect(reverse('user:login'))
 
 # session 测试
 # class SessionTestView:

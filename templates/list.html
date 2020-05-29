@@ -13,9 +13,9 @@
 {# 商品详情和列表页面主体内容块 #}
 {% block main_content %}
     <div class="breadcrumb">
-        <a href="#">全部分类</a>
+        <a href="/list/0">全部分类</a>
         <span>></span>
-        <a href="#">{{ type.name }}</a>
+        <a href="#">{{ type.name | default:'全部商品' }}</a>
     </div>
 
     <div class="main_wrap clearfix">
@@ -36,9 +36,12 @@
 
         <div class="r_wrap fr clearfix">
             <div class="sort_bar">
-                <a href="{% url 'goods:list' type.id 1 %}?sort=default" {% if sort == 'default' %} class="active" {% endif %}>默认</a>
-                <a href="{% url 'goods:list' type.id 1 %}?sort=price" {% if sort == 'price' %} class="active" {% endif %}>价格</a>
-                <a href="{% url 'goods:list' type.id 1 %}?sort=hot" {% if sort == 'hot' %} class="active" {% endif %}>人气</a>
+                <a href="{% url 'goods:list' type.id 1 %}?sort=default" {% if sort == 'default' %}
+                   class="active" {% endif %}>默认</a>
+                <a href="{% url 'goods:list' type.id 1 %}?sort=price" {% if sort == 'price' %}
+                   class="active" {% endif %}>价格</a>
+                <a href="{% url 'goods:list' type.id 1 %}?sort=hot" {% if sort == 'hot' %}
+                   class="active" {% endif %}>人气</a>
             </div>
 
             <ul class="goods_type_list clearfix">
@@ -57,9 +60,13 @@
 
             <div class="pagenation">
                 {% if skus_page.has_previous %}
-                    <a href="{% url 'goods:list' type.id skus_page.previous_page_number %}?sort={{ sort }}"><上一页</a>
+                    <a href="{% url 'goods:list' type.id skus_page.previous_page_number %}?sort={{ sort }}">
+                        <上一页
+                    </a>
                 {% else %}
-                    <a href="#"><没有了</a>
+                    <a href="#">
+                        <没有了
+                    </a>
                 {% endif %}
                 {% for pindex in pages %}
                     {% if pindex == skus_page.number %}

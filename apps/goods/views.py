@@ -140,13 +140,8 @@ class ListView(View):
 
     def get(self, request, type_id, page):
         '''显示列表页'''
-        # 获取种类信息
-        try:
-            type = GoodsType.objects.get(id=type_id)
-        except GoodsType.DoesNotExist:
-            # 种类不存在
-            return redirect(reverse('goods:index'))
-
+        if type_id == '':
+            type_id = -1
         # 获取商品的所有分类信息
         types = GoodsType.objects.all().order_by('index')
 
@@ -155,14 +150,30 @@ class ListView(View):
         # sort=price 按照商品价格排序
         # sort=hot 按照商品销量排序
         sort = request.GET.get('sort')
-
-        if sort == 'price':
-            skus = type.goodssku_set.all().order_by('price')
-        elif sort == 'hot':
-            skus = type.goodssku_set.all().order_by('-sales')
-        else:
-            sort = 'default'
-            skus = type.goodssku_set.all().order_by('-id')
+        # 获取种类信息
+        try:
+            type = GoodsType.objects.get(id=type_id)
+            if sort == 'price':
+                skus = type.goodssku_set.all().order_by('price')
+            elif sort == 'hot':
+                skus = type.goodssku_set.all().order_by('-sales')
+            else:
+                sort = 'default'
+                skus = type.goodssku_set.all().order_by('-id')
+            # 获取新品信息
+            new_skus = GoodsSKU.objects.filter(type=type).order_by('-create_time')[:3]
+        except GoodsType.DoesNotExist:
+            # 种类不存在,查询所有类型商品
+            if sort == 'price':
+                skus = GoodsSKU.objects.all().order_by('price')
+            elif sort == 'hot':
+                skus = GoodsSKU.objects.all().order_by('-sales')
+            else:
+                sort = 'default'
+                skus = GoodsSKU.objects.all().order_by('-id')
+            # 获取新品信息
+            new_skus = GoodsSKU.objects.all().order_by('-create_time')[:3]
+            type = None
 
         # 对数据进行分页 (list数据, 每页的个数)
         paginator = Paginator(skus, 10)
@@ -193,9 +204,6 @@ class ListView(View):
             pages = range(num_pages - 4, num_pages + 1)
         else:
             pages = range(page - 2, page + 3)
-
-        # 获取新品信息
-        new_skus = GoodsSKU.objects.filter(type=type).order_by('-create_time')[:3]
 
         # 获取用户购物车中商品的数目
         user = request.user

@@ -162,12 +162,15 @@ SITE_ADDRESS = 'http://192.168.1.196/'
 # 静态文件地址
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 # 指定收集静态文件的目录
 STATIC_ROOT = '/var/www/dailyfresh/static/'
 
+# 设置静态页面文件目录
+STATIC_HTML_ROOT = '/var/www/dailyfresh/html/'
 # 设置上传文件的保存目录
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
-MEDIA_ROOT = '/var/www/media_file/'
+MEDIA_ROOT = '/var/www/dailyfresh/media_file/'
 
 # 设置Django的文件存储类
 DEFAULT_FILE_STORAGE = 'utils.storage.MyStorage'

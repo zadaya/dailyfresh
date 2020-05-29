@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'reset_pwd/css/reset_pwd.css' %}">
+    <script src="{% static 'reset_pwd/js/reset_pwd.js' %}"></script>
+</head>
+
+<body>
+<h1>尊敬的%s您好，请为您的账户重置密码：</h1>
+<div class="body_form">
+    <h3>重置您的密码</h3>
+    <form action='http://www.baidu.com/' method="POST">
+        {% csrf_token %}
+        <div class="form_input">
+            <p>用户名:</p>
+            <input type="text" name="username" readonly="readonly" value="zadaya"><br>
+            <p>新密码:</p>
+            <input type="password" name="password" id="pwd" onBlur="check_pwd()" onfocus="cleanTipMsg()"><br>
+            <p>确认密码:</p>
+            <input type="password" name="confirmpwd" id="pwd1" onBlur="check_pwd()" onfocus="cleanTipMsg()">
+            <p id="tipMsg">&nbsp;</p>
+            <div class="btnGroup">
+                <input type="submit" value="修改" id="submitBtn" disabled=true>
+                <input type="button" value="重置" id="resetBtn" onclick="reset()">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>

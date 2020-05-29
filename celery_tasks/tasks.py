@@ -19,7 +19,7 @@ app = Celery('celery_tasks.tasks', broker='redis://127.0.0.1:6379/0')
 def send_register_active_email(to_mail, username, token):
     '''发送激活邮件'''
     print('正在发送中……')
-    subject = '天天生鲜用户激活'
+    subject = '每日生鲜用户激活'
     message = ''
     html_message = '<h1>尊敬的%s您好，欢迎您注册成为&nbsp;每日生鲜&nbsp;的会员！请点击下方链接以激活您的账户：</h1><br /><a ' \
                    'href="%suser/active/%s">%suser/active/%s</a>' % (
@@ -27,7 +27,22 @@ def send_register_active_email(to_mail, username, token):
     sender = settings.EMAIL_FROM
     receiver = [to_mail]
     send_mail(subject, message, sender, receiver, html_message=html_message)
-    time.sleep(5)
+    time.sleep(3)
+
+
+@app.task
+def send_reset_pwd_email(to_mail, username, token):
+    '''发送密码重置邮件'''
+    print('正在发送中……')
+    subject = '每日生鲜用户密码重置'
+    message = ''
+    html_message = '<h1>尊敬的%s您好，您正在申请重置密码服务，如确认是您本人所为，请在30分钟内点击下方链接以重置您的账户密码：</h1><br /><a ' \
+                   'href="%suser/reset_pwd/?token=%s">%suser/reset_pwd/?token=%s</a>' % (
+                       username, settings.SITE_ADDRESS, token, settings.SITE_ADDRESS, token)
+    sender = settings.EMAIL_FROM
+    receiver = [to_mail]
+    send_mail(subject, message, sender, receiver, html_message=html_message)
+    time.sleep(3)
 
 
 @app.task
@@ -60,6 +75,6 @@ def generate_static_index_html():
     # 3.模板渲染
     static_index_html = temp.render(context)
     # 生成首页对应的静态文件
-    save_path = os.path.join(settings.STATIC_ROOT, 'index.html')
+    save_path = os.path.join(settings.STATIC_HTML_ROOT, 'index.html')
     with open(save_path, 'w') as f:
         f.write(static_index_html)

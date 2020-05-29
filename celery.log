@@ -59,3 +59,940 @@ redis.exceptions.ConnectionError: Connection closed by server.
             leak, never use this setting in production environments!
   warnings.warn('''Using settings.DEBUG leads to a memory
 [2020-05-28 06:58:04,272: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 12:28:22,247: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 12:28:22,256: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 12:28:23,275: INFO/MainProcess] mingle: all alone
+[2020-05-28 12:28:23,285: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 12:28:23,286: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 13:07:35,454: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[0f09b5cf-abf3-4fd8-97fc-63dac7c997d6]  
+[2020-05-28 13:07:35,468: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:07:35,496: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:07:35,497: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:07:35,499: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:07:35,500: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide3.jpg
+[2020-05-28 13:07:35,501: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:07:35,507: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:07:35,512: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:07:35,515: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:07:35,516: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:07:35,517: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:07:35,519: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:07:35,521: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:07:35,524: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:07:35,525: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:07:35,526: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:07:35,528: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:07:35,532: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:07:35,534: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:07:35,536: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:07:35,537: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:07:35,538: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:07:35,542: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:07:35,544: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:07:35,546: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:07:35,547: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:07:35,549: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:07:35,551: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:07:35,554: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:07:35,555: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:07:35,557: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:07:35,559: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:07:35,562: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:07:35,566: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:07:35,567: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:07:35,569: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:07:35,570: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:07:35,571: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[0f09b5cf-abf3-4fd8-97fc-63dac7c997d6] succeeded in 0.11614953199978117s: None
+[2020-05-28 13:08:09,958: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[3a6276be-56ee-4889-b676-ec2366cbfb41]  
+[2020-05-28 13:08:09,968: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:08:09,976: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:08:09,979: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:08:09,980: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:08:09,981: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:08:09,982: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:08:09,982: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:08:09,986: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:08:09,989: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:08:09,991: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:08:09,992: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:08:09,994: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:08:09,997: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:08:10,001: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:08:10,002: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:08:10,004: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:08:10,005: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:08:10,009: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:08:10,012: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:08:10,013: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:08:10,015: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:08:10,016: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:08:10,020: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:08:10,023: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:08:10,024: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:08:10,026: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:08:10,028: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:08:10,031: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:08:10,034: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:08:10,035: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:08:10,037: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:08:10,040: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:08:10,045: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:08:10,048: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:08:10,050: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:08:10,052: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:08:10,053: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:08:10,054: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[3a6276be-56ee-4889-b676-ec2366cbfb41] succeeded in 0.09492416400007642s: None
+[2020-05-28 13:12:40,287: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[d1c120c3-32bf-45ff-80a8-40777bd76cd1]  
+[2020-05-28 13:12:40,297: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:12:40,303: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:12:40,305: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:12:40,307: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:12:40,308: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04_Lj3Ab6l.jpg
+[2020-05-28 13:12:40,309: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:12:40,309: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:12:40,314: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:12:40,317: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:12:40,319: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:12:40,320: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:12:40,322: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:12:40,324: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:12:40,327: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:12:40,329: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:12:40,331: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:12:40,333: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:12:40,338: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:12:40,341: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:12:40,342: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:12:40,343: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:12:40,345: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:12:40,350: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:12:40,353: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:12:40,354: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:12:40,355: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:12:40,357: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:12:40,361: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:12:40,364: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:12:40,366: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:12:40,368: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:12:40,370: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:12:40,373: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:12:40,375: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:12:40,377: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:12:40,378: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:12:40,379: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:12:40,380: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[d1c120c3-32bf-45ff-80a8-40777bd76cd1] succeeded in 0.09259972299969377s: None
+[2020-05-28 13:18:32,417: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[576110f6-49eb-49b5-8798-823ee86fbc43]  
+[2020-05-28 13:18:32,430: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:18:32,439: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:18:32,440: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:18:32,442: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:18:32,444: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04_2Qg1kdl.jpg
+[2020-05-28 13:18:32,445: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:18:32,445: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:18:32,450: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:18:32,452: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:18:32,454: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:18:32,455: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:18:32,456: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:18:32,460: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:18:32,463: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:18:32,465: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:18:32,466: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:18:32,467: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:18:32,471: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:18:32,473: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:18:32,475: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:18:32,477: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:18:32,478: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:18:32,483: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:18:32,485: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:18:32,487: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:18:32,488: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:18:32,489: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:18:32,493: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:18:32,495: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:18:32,498: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:18:32,499: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:18:32,501: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:18:32,504: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:18:32,507: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:18:32,509: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:18:32,512: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:18:32,515: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:18:32,516: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[576110f6-49eb-49b5-8798-823ee86fbc43] succeeded in 0.09807521999982782s: None
+[2020-05-28 13:19:24,867: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[ca3b4036-3001-4a97-8e72-a0ac61a4a8eb]  
+[2020-05-28 13:19:24,878: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:19:24,885: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:19:24,887: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:19:24,889: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:19:24,891: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04_3TvpOm5.jpg
+[2020-05-28 13:19:24,893: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:19:24,893: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:19:24,898: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:19:24,901: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:19:24,903: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:19:24,904: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:19:24,906: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:19:24,909: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:19:24,912: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:19:24,914: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:19:24,916: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:19:24,917: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:19:24,923: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:19:24,927: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:19:24,928: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:19:24,930: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:19:24,932: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:19:24,938: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:19:24,942: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:19:24,944: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:19:24,946: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:19:24,948: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:19:24,951: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:19:24,954: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:19:24,956: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:19:24,957: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:19:24,958: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:19:24,961: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:19:24,964: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:19:24,965: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:19:24,967: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:19:24,969: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:19:24,970: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[ca3b4036-3001-4a97-8e72-a0ac61a4a8eb] succeeded in 0.1018529180000769s: None
+[2020-05-28 13:22:47,551: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[d57c3a03-b8e2-4141-9086-838bddb57723]  
+[2020-05-28 13:22:47,563: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:22:47,573: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:22:47,574: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:22:47,576: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:22:47,578: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:22:47,579: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:22:47,579: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:22:47,585: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:22:47,587: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:22:47,589: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:22:47,590: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:22:47,592: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:22:47,595: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:22:47,599: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:22:47,600: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:22:47,601: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:22:47,603: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:22:47,606: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:22:47,609: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:22:47,611: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:22:47,613: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:22:47,615: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:22:47,620: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:22:47,623: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:22:47,624: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:22:47,625: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:22:47,627: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:22:47,631: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:22:47,635: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:22:47,637: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:22:47,638: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:22:47,640: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:22:47,642: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:22:47,646: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:22:47,647: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:22:47,649: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:22:47,651: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:22:47,652: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[d57c3a03-b8e2-4141-9086-838bddb57723] succeeded in 0.09959353600015675s: None
+[2020-05-28 13:24:59,527: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[ea8e85f3-2836-4e66-b32c-9667a4be5c33]  
+[2020-05-28 13:24:59,539: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:24:59,546: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:24:59,547: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:24:59,549: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:24:59,550: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:24:59,552: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:24:59,552: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:24:59,557: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:24:59,560: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:24:59,561: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:24:59,562: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:24:59,564: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:24:59,566: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:24:59,569: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:24:59,571: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:24:59,572: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:24:59,574: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:24:59,578: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:24:59,581: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:24:59,583: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:24:59,585: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:24:59,587: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:24:59,591: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:24:59,594: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:24:59,596: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:24:59,599: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:24:59,601: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:24:59,605: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:24:59,608: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:24:59,609: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:24:59,610: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:24:59,612: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:24:59,614: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:24:59,616: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:24:59,617: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:24:59,618: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:24:59,620: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:24:59,621: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[ea8e85f3-2836-4e66-b32c-9667a4be5c33] succeeded in 0.09303656500014768s: None
+[2020-05-28 13:25:08,920: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[9c86635a-e56d-4411-b208-ebf9fb251be2]  
+[2020-05-28 13:25:08,931: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:25:08,937: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:25:08,940: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:25:08,942: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:25:08,944: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:25:08,945: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:25:08,945: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:25:08,949: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:25:08,951: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:25:08,953: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:25:08,955: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:25:08,957: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:25:08,961: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:25:08,963: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:25:08,964: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:25:08,965: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:25:08,967: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:25:08,971: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:25:08,973: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:25:08,974: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:25:08,976: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:25:08,977: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:25:08,981: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:25:08,983: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:25:08,985: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:25:08,987: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:25:08,989: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:25:08,994: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:25:08,997: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:25:08,998: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:25:09,000: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:25:09,002: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:25:09,005: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:25:09,008: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:25:09,009: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:25:09,011: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:25:09,013: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:25:09,014: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[9c86635a-e56d-4411-b208-ebf9fb251be2] succeeded in 0.09323061299983237s: None
+[2020-05-28 13:32:45,122: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[72b5d1ee-5570-46ab-9e87-a8ae735b796d]  
+[2020-05-28 13:32:45,132: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:32:45,138: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:32:45,140: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:32:45,142: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:32:45,143: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:32:45,145: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:32:45,145: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv03.jpg
+[2020-05-28 13:32:45,150: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:32:45,153: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:32:45,154: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:32:45,155: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:32:45,157: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:32:45,159: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:32:45,164: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:32:45,165: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:32:45,167: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:32:45,168: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:32:45,172: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:32:45,174: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:32:45,175: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:32:45,177: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:32:45,179: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:32:45,184: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:32:45,186: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:32:45,187: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:32:45,189: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:32:45,191: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:32:45,194: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:32:45,197: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:32:45,198: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:32:45,200: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:32:45,202: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:32:45,205: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:32:45,207: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:32:45,209: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:32:45,211: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:32:45,213: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:32:45,214: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[72b5d1ee-5570-46ab-9e87-a8ae735b796d] succeeded in 0.0907657080001627s: None
+[2020-05-28 13:33:32,343: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[27cac46f-ab13-42c0-a63b-5532d6ce490b]  
+[2020-05-28 13:33:32,354: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:33:32,363: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:33:32,365: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:33:32,366: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:33:32,367: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:33:32,369: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:33:32,369: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv03.jpg
+[2020-05-28 13:33:32,373: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:33:32,377: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:33:32,379: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:33:32,381: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:33:32,383: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:33:32,385: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:33:32,387: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:33:32,388: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:33:32,389: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:33:32,392: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:33:32,396: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:33:32,399: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:33:32,400: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:33:32,401: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:33:32,403: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:33:32,419: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:33:32,422: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:33:32,424: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:33:32,426: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:33:32,428: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:33:32,431: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:33:32,434: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:33:32,435: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:33:32,438: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:33:32,441: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:33:32,445: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:33:32,449: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:33:32,451: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:33:32,454: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:33:32,456: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:33:32,457: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[27cac46f-ab13-42c0-a63b-5532d6ce490b] succeeded in 0.11323846200002663s: None
+[2020-05-28 13:38:21,117: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[5bf5fa72-7091-4786-a6af-7085fcc02623]  
+[2020-05-28 13:38:21,126: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 13:38:21,133: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 13:38:21,135: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 13:38:21,136: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 13:38:21,138: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 13:38:21,139: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 13:38:21,139: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 13:38:21,143: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 13:38:21,146: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 13:38:21,147: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 13:38:21,149: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 13:38:21,151: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 13:38:21,154: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 13:38:21,157: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 13:38:21,159: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 13:38:21,160: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 13:38:21,162: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 13:38:21,167: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 13:38:21,169: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:38:21,171: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 13:38:21,172: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 13:38:21,174: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 13:38:21,178: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 13:38:21,181: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 13:38:21,183: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 13:38:21,184: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 13:38:21,185: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 13:38:21,188: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 13:38:21,191: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 13:38:21,194: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 13:38:21,196: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 13:38:21,198: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 13:38:21,201: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 13:38:21,204: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 13:38:21,206: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 13:38:21,208: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 13:38:21,210: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 13:38:21,211: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[5bf5fa72-7091-4786-a6af-7085fcc02623] succeeded in 0.09291370499977347s: None
+[2020-05-28 13:50:45,164: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 13:50:45,174: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 13:50:46,199: INFO/MainProcess] mingle: all alone
+[2020-05-28 13:50:46,220: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 13:50:46,220: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 14:55:17,280: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[0a7c55bd-9a6f-49d5-ac3e-3d055bd18f7c]  
+[2020-05-28 14:55:17,298: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 14:55:17,325: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 14:55:17,328: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 14:55:17,330: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 14:55:17,332: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 14:55:17,335: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 14:55:17,335: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 14:55:17,344: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 14:55:17,348: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 14:55:17,354: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 14:55:17,357: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 14:55:17,361: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 14:55:17,367: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 14:55:17,372: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 14:55:17,375: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 14:55:17,378: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 14:55:17,381: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 14:55:17,393: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 14:55:17,403: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 14:55:17,410: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 14:55:17,415: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 14:55:17,419: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 14:55:17,431: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 14:55:17,434: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 14:55:17,436: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 14:55:17,438: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 14:55:17,439: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 14:55:17,443: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 14:55:17,445: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 14:55:17,447: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 14:55:17,448: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 14:55:17,450: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 14:55:17,453: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 14:55:17,456: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 14:55:17,458: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 14:55:17,459: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 14:55:17,461: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 14:55:17,464: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[0a7c55bd-9a6f-49d5-ac3e-3d055bd18f7c] succeeded in 0.18207239000003028s: None
+[2020-05-28 15:00:02,213: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[89fb8eff-400e-4d85-b46b-5e2bca83c3b4]  
+[2020-05-28 15:00:02,224: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:00:02,232: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:00:02,234: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:00:02,236: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:00:02,238: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:00:02,239: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:00:02,239: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:00:02,244: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:00:02,247: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:00:02,249: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:00:02,250: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:00:02,252: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:00:02,256: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:00:02,259: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:00:02,260: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:00:02,262: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:00:02,264: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:00:02,267: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:00:02,270: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:00:02,272: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:00:02,274: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:00:02,276: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:00:02,281: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:00:02,284: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:00:02,287: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:00:02,289: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:00:02,291: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:00:02,294: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:00:02,297: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:00:02,299: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:00:02,302: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:00:02,305: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:00:02,309: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:00:02,313: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:00:02,315: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:00:02,317: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:00:02,321: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:00:02,322: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[89fb8eff-400e-4d85-b46b-5e2bca83c3b4] succeeded in 0.10764951100100006s: None
+[2020-05-28 15:01:36,890: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[249acf01-5eb5-4317-919f-17e5a1a631e7]  
+[2020-05-28 15:01:36,901: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:01:36,908: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:01:36,910: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:01:36,915: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:01:36,917: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:01:36,919: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:01:36,919: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:01:36,924: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:01:36,927: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:01:36,929: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:01:36,932: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:01:36,934: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:01:36,937: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:01:36,939: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:01:36,941: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:01:36,943: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:01:36,945: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:01:36,950: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:01:36,954: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:01:36,955: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:01:36,957: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:01:36,959: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:01:36,965: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:01:36,968: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:01:36,970: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:01:36,972: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:01:36,973: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:01:36,978: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:01:36,983: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:01:36,985: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:01:36,988: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:01:36,990: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:01:36,993: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:01:36,996: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:01:36,998: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:01:37,000: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:01:37,002: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:01:37,003: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[249acf01-5eb5-4317-919f-17e5a1a631e7] succeeded in 0.11215491399889288s: None
+[2020-05-28 15:02:05,601: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[6acdb893-301b-431c-9ad6-e5fbc566248b]  
+[2020-05-28 15:02:05,621: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:02:05,628: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:02:05,631: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:02:05,633: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:02:05,634: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:02:05,636: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:02:05,636: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:02:05,640: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:02:05,643: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:02:05,646: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:02:05,648: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:02:05,650: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:02:05,654: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:02:05,657: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:02:05,659: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:02:05,661: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:02:05,664: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:02:05,671: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:02:05,675: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:02:05,676: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:02:05,677: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:02:05,680: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:02:05,687: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:02:05,690: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:02:05,692: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:02:05,694: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:02:05,696: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:02:05,699: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:02:05,703: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:02:05,705: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:02:05,707: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:02:05,708: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:02:05,711: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:02:05,715: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:02:05,716: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:02:05,718: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:02:05,720: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:02:05,721: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[6acdb893-301b-431c-9ad6-e5fbc566248b] succeeded in 0.11914391900063492s: None
+[2020-05-28 15:03:18,546: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[bb3f93e7-e063-4967-9b49-02dd86b267f3]  
+[2020-05-28 15:03:18,561: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:03:18,570: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:03:18,572: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:03:18,573: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:03:18,575: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:03:18,576: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:03:18,576: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:03:18,581: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:03:18,584: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:03:18,586: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:03:18,587: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:03:18,589: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:03:18,593: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:03:18,597: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:03:18,599: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:03:18,601: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:03:18,603: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:03:18,608: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:03:18,612: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:03:18,614: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:03:18,616: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:03:18,617: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:03:18,623: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:03:18,627: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:03:18,629: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:03:18,631: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:03:18,633: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:03:18,637: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:03:18,640: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:03:18,643: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:03:18,645: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:03:18,647: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:03:18,651: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:03:18,654: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:03:18,655: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:03:18,658: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:03:18,660: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:03:18,661: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[bb3f93e7-e063-4967-9b49-02dd86b267f3] succeeded in 0.11354025500077114s: None
+[2020-05-28 15:20:02,267: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[0561e0ad-eae6-4be7-ac98-f5b8e61b0209]  
+[2020-05-28 15:20:02,283: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:20:02,293: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:20:02,294: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:20:02,295: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:20:02,297: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:20:02,299: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:20:02,299: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:20:02,305: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:20:02,308: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:20:02,310: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:20:02,312: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:20:02,314: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:20:02,318: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:20:02,321: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:20:02,323: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:20:02,324: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:20:02,325: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:20:02,329: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:20:02,331: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:20:02,332: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:20:02,334: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:20:02,336: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:20:02,341: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:20:02,344: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:20:02,345: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:20:02,346: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:20:02,348: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:20:02,350: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:20:02,354: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:20:02,356: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:20:02,358: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:20:02,360: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:20:02,362: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:20:02,364: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:20:02,365: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:20:02,367: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:20:02,369: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:20:02,372: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[0561e0ad-eae6-4be7-ac98-f5b8e61b0209] succeeded in 0.10216707899962785s: None
+[2020-05-28 15:20:11,570: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[1fd4923a-2f44-43a8-9a3e-d48bb749ffa3]  
+[2020-05-28 15:20:11,579: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:20:11,588: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:20:11,593: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:20:11,598: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:20:11,600: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:20:11,602: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:20:11,602: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:20:11,606: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:20:11,608: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:20:11,610: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:20:11,611: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:20:11,612: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:20:11,616: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:20:11,619: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:20:11,627: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:20:11,628: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:20:11,630: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:20:11,634: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:20:11,638: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:20:11,640: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:20:11,641: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:20:11,643: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:20:11,647: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:20:11,649: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:20:11,651: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:20:11,653: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:20:11,655: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:20:11,657: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:20:11,660: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:20:11,661: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:20:11,663: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:20:11,665: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:20:11,668: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:20:11,672: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:20:11,673: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:20:11,675: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:20:11,677: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:20:11,678: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[1fd4923a-2f44-43a8-9a3e-d48bb749ffa3] succeeded in 0.10684555300031207s: None
+[2020-05-28 15:20:29,940: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[12c53f9b-0428-45da-b411-1a2c57947479]  
+[2020-05-28 15:20:29,951: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 15:20:29,958: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 15:20:29,960: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 15:20:29,962: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 15:20:29,969: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 15:20:29,971: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 15:20:29,971: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 15:20:29,975: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 15:20:29,977: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 15:20:29,979: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 15:20:29,980: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 15:20:29,981: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 15:20:29,984: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 15:20:29,987: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 15:20:29,988: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 15:20:29,990: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 15:20:29,992: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 15:20:29,995: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 15:20:29,998: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:20:29,999: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 15:20:30,001: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 15:20:30,003: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 15:20:30,007: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 15:20:30,010: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 15:20:30,011: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 15:20:30,013: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 15:20:30,014: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 15:20:30,016: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 15:20:30,020: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 15:20:30,021: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 15:20:30,023: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 15:20:30,024: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 15:20:30,027: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 15:20:30,029: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 15:20:30,030: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 15:20:30,031: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 15:20:30,033: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 15:20:30,034: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[12c53f9b-0428-45da-b411-1a2c57947479] succeeded in 0.09270502300023509s: None
+[2020-05-28 15:24:24,655: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 15:24:24,663: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 15:24:25,690: INFO/MainProcess] mingle: all alone
+[2020-05-28 15:24:25,701: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 15:24:25,701: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 19:42:18,895: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 19:42:18,903: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 19:42:19,923: INFO/MainProcess] mingle: all alone
+[2020-05-28 19:42:19,932: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 19:42:19,932: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 22:59:36,098: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[9865d591-b726-492a-a1f0-cd247e5b691f]  
+[2020-05-28 22:59:36,126: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 22:59:36,149: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 22:59:36,151: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 22:59:36,153: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 22:59:36,154: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 22:59:36,155: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 22:59:36,156: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 22:59:36,162: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 22:59:36,165: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 22:59:36,167: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 22:59:36,170: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 22:59:36,171: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 22:59:36,174: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 22:59:36,177: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 22:59:36,178: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 22:59:36,180: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 22:59:36,182: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 22:59:36,187: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 22:59:36,190: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 22:59:36,192: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 22:59:36,193: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 22:59:36,194: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 22:59:36,198: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 22:59:36,200: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 22:59:36,202: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 22:59:36,204: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 22:59:36,206: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 22:59:36,209: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 22:59:36,212: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 22:59:36,215: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 22:59:36,217: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 22:59:36,219: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 22:59:36,222: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 22:59:36,224: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 22:59:36,225: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 22:59:36,227: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 22:59:36,228: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 22:59:36,229: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[9865d591-b726-492a-a1f0-cd247e5b691f] succeeded in 0.12863960200047586s: None
+[2020-05-28 23:00:04,121: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[09a7f0da-fc56-4afa-9198-9d88d1815fca]  
+[2020-05-28 23:00:04,139: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 23:00:04,146: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 23:00:04,148: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 23:00:04,149: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 23:00:04,151: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 23:00:04,152: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 23:00:04,152: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 23:00:04,156: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 23:00:04,159: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 23:00:04,161: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 23:00:04,162: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 23:00:04,163: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 23:00:04,167: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 23:00:04,171: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 23:00:04,173: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 23:00:04,175: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 23:00:04,176: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 23:00:04,181: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 23:00:04,185: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 23:00:04,187: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 23:00:04,189: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 23:00:04,190: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 23:00:04,195: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 23:00:04,199: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 23:00:04,201: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 23:00:04,203: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 23:00:04,205: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 23:00:04,209: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 23:00:04,212: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 23:00:04,214: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 23:00:04,215: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 23:00:04,218: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 23:00:04,222: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 23:00:04,224: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 23:00:04,226: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 23:00:04,227: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 23:00:04,229: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 23:00:04,230: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[09a7f0da-fc56-4afa-9198-9d88d1815fca] succeeded in 0.10792741199838929s: None
+[2020-05-28 23:01:35,767: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-28 23:01:35,774: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-28 23:01:36,792: INFO/MainProcess] mingle: all alone
+[2020-05-28 23:01:36,811: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-28 23:01:36,811: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-28 23:02:08,344: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[71e9d26f-f2cc-49e9-b224-7a092af3f845]  
+[2020-05-28 23:02:08,361: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-28 23:02:08,384: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-28 23:02:08,386: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-28 23:02:08,388: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-28 23:02:08,390: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-28 23:02:08,396: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-28 23:02:08,396: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-28 23:02:08,402: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-28 23:02:08,406: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-28 23:02:08,409: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-28 23:02:08,411: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-28 23:02:08,414: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-28 23:02:08,417: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-28 23:02:08,421: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-28 23:02:08,423: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-28 23:02:08,425: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-28 23:02:08,428: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-28 23:02:08,433: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-28 23:02:08,436: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 23:02:08,437: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-28 23:02:08,439: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-28 23:02:08,442: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-28 23:02:08,448: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-28 23:02:08,451: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-28 23:02:08,453: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-28 23:02:08,455: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-28 23:02:08,457: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-28 23:02:08,463: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-28 23:02:08,467: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-28 23:02:08,469: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-28 23:02:08,471: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-28 23:02:08,473: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-28 23:02:08,478: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-28 23:02:08,481: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-28 23:02:08,483: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-28 23:02:08,484: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-28 23:02:08,485: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-28 23:02:08,486: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[71e9d26f-f2cc-49e9-b224-7a092af3f845] succeeded in 0.13999598899681587s: None
