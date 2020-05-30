@@ -173,7 +173,7 @@ class ListView(View):
                 skus = GoodsSKU.objects.all().order_by('-id')
             # 获取新品信息
             new_skus = GoodsSKU.objects.all().order_by('-create_time')[:3]
-            type = None
+            type = GoodsType(id=0)
 
         # 对数据进行分页 (list数据, 每页的个数)
         paginator = Paginator(skus, 10)

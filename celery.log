@@ -996,3 +996,101 @@ redis.exceptions.ConnectionError: Connection closed by server.
 [2020-05-28 23:02:08,484: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
 [2020-05-28 23:02:08,485: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
 [2020-05-28 23:02:08,486: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[71e9d26f-f2cc-49e9-b224-7a092af3f845] succeeded in 0.13999598899681587s: None
+[2020-05-30 03:01:31,192: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-30 03:01:31,201: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-30 03:01:32,218: INFO/MainProcess] mingle: all alone
+[2020-05-30 03:01:32,234: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-30 03:01:32,234: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-30 03:14:59,854: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 599, in start
+    c.loop(*c.loop_args())
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/worker/loops.py", line 83, in asynloop
+    next(loop)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 1088, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 359, in on_readable
+    chan.handlers[type]()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 693, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/kombu/transport/redis.py", line 703, in _receive_one
+    response = c.parse_response()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/client.py", line 3502, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/client.py", line 3476, in _execute
+    return command(*args, **kwargs)
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 730, in read_response
+    response = self._parser.read_response()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 321, in read_response
+    raw = self._buffer.readline()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2020-05-30 10:20:11,772: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-30 10:20:11,779: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-30 10:20:12,797: INFO/MainProcess] mingle: all alone
+[2020-05-30 10:20:12,813: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-30 10:20:12,813: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-30 15:00:20,202: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-05-30 15:00:20,209: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-30 15:00:21,226: INFO/MainProcess] mingle: all alone
+[2020-05-30 15:00:21,236: WARNING/MainProcess] /home/zdy/.virtualenvs/dailyfreshvenv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+[2020-05-30 15:00:21,236: INFO/MainProcess] celery@zdy-VirtualBox ready.
+[2020-05-30 15:51:26,973: INFO/MainProcess] Received task: celery_tasks.tasks.send_register_active_email[7fbd2b17-249d-45fd-b2f7-b1606f3ebde9]  
+[2020-05-30 15:51:26,975: WARNING/ForkPoolWorker-2] 正在发送中……
+[2020-05-30 15:51:34,198: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.send_register_active_email[7fbd2b17-249d-45fd-b2f7-b1606f3ebde9] succeeded in 7.222958906997519s: None
+[2020-05-30 16:01:12,973: INFO/MainProcess] Received task: celery_tasks.tasks.generate_static_index_html[a2f96902-f66d-4ede-a0bb-bfcdae2da709]  
+[2020-05-30 16:01:12,990: WARNING/ForkPoolWorker-2] **********
+重新生成静态主页
+**********
+[2020-05-30 16:01:13,016: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide02.jpg
+[2020-05-30 16:01:13,019: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide.jpg
+[2020-05-30 16:01:13,021: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide04.jpg
+[2020-05-30 16:01:13,022: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/slide03.jpg
+[2020-05-30 16:01:13,024: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv01.jpg
+[2020-05-30 16:01:13,024: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/banner/adv02.jpg
+[2020-05-30 16:01:13,028: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner01.jpg
+[2020-05-30 16:01:13,032: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods009.jpg
+[2020-05-30 16:01:13,034: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/yingtao.jpg
+[2020-05-30 16:01:13,037: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods101.jpg
+[2020-05-30 16:01:13,039: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/dandongcaomei.jpg
+[2020-05-30 16:01:13,042: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner02.jpg
+[2020-05-30 16:01:13,045: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/longxia.jpg
+[2020-05-30 16:01:13,047: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/goods020.jpg
+[2020-05-30 16:01:13,050: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/baoyu.jpg
+[2020-05-30 16:01:13,052: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/youyu.jpg
+[2020-05-30 16:01:13,056: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner03.jpg
+[2020-05-30 16:01:13,059: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-30 16:01:13,060: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/feiliniupai.jpg
+[2020-05-30 16:01:13,061: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/btj.jpg
+[2020-05-30 16:01:13,063: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/niupai.jpg
+[2020-05-30 16:01:13,069: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner04.jpg
+[2020-05-30 16:01:13,071: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/jidan.jpg
+[2020-05-30 16:01:13,072: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/huozhuzi.jpg
+[2020-05-30 16:01:13,074: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tianniunai.jpg
+[2020-05-30 16:01:13,075: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/kaohaiyadan.jpg
+[2020-05-30 16:01:13,077: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner05.jpg
+[2020-05-30 16:01:13,079: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/qincai.jpg
+[2020-05-30 16:01:13,081: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wwc.jpg
+[2020-05-30 16:01:13,082: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sghg.jpg
+[2020-05-30 16:01:13,084: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/gongcai.jpg
+[2020-05-30 16:01:13,089: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/type/banner06.jpg
+[2020-05-30 16:01:13,092: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/wanghongbingjilin.jpg
+[2020-05-30 16:01:13,094: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/tangyuan.jpg
+[2020-05-30 16:01:13,096: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/sudongshuijiao.jpg
+[2020-05-30 16:01:13,099: WARNING/ForkPoolWorker-2] http://192.168.1.196/media_file/images/goods/bingjiling.jpg
+[2020-05-30 16:01:13,102: INFO/ForkPoolWorker-2] Task celery_tasks.tasks.generate_static_index_html[a2f96902-f66d-4ede-a0bb-bfcdae2da709] succeeded in 0.12767964000522625s: None
