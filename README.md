@@ -42,8 +42,8 @@ celery-worker 启动命令:（在项目目录下）celery -A celery_tasks.tasks_
 django-haystack 生成索引数据命令:（在项目目录下） python manage.py rebuild_index
 
 
-uwsgi启动与停止命令：uwsgi --ini uwsgi.ini
-                  uwsgi --stop uwsgi.pid
+uwsgi启动与停止命令：uwsgi --ini uwsgi/uwsgi.ini
+                  uwsgi --stop uwsgi/uwsgi.pid
 
 nginx启动与停止命令：./nginx
                   ./nginx -s stop
@@ -75,3 +75,7 @@ nginx启动与停止命令：./nginx
     迁移静态文件到nginx制定的静态目录
         如：在Django的 settings.py 中配置 STATIC_ROOT = '/var/www/dailyfresh/static'
         并执行命令 python manage.py collectstatic
+
+## 启动与停止脚本
+    dfsite_start.sh
+    dfsite_stop.sh
